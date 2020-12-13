@@ -1,0 +1,67 @@
+.cards
+  padding: 6.3rem 0
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    & h2
+      flex-basis: 100%
+  &__card
+    flex: 0 1 550/1140*100%
+    position: relative
+  &__img
+    position: absolute
+    // max-width: 38.4rem
+    max-height: 25rem
+    & img
+      width: 100%
+    &--top
+      transform: translate(90/384*100%, 60/250*100%)
+      z-index: 2
+    &--midle
+      filter: blur(4px)
+      z-index: 1
+    &--bottom
+      transform: translate(160/384*100%, 115/250*100%)
+      z-index: 0
+      filter: blur(4px)
+  &__form
+    flex: 0 1 500/1140*100%
+    display: flex
+    flex-wrap: wrap
+  &__mounts
+    flex: 0 1 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 2.3rem
+  &__mount
+    flex: 0 1 120/500*100%
+    text-align: center
+  &__club
+    &-label
+      flex: 0 1 100%
+      flex-wrap: wrap
+      font-size: 1.6rem
+      line-height: 2.2rem
+      color: $gray
+      font-weight: 500
+      margin-bottom: 1.2rem
+      & span
+        font-weight: 300
+        flex: 0 1 100%
+        margin-left: 2.9rem
+  &__input
+    flex: 0 1 100%
+    font-size: 1.4rem
+    color: lighten(saturate(adjust-hue($gray, 249), 3.35), 40.98)
+    padding: 1.5rem 25/500*100%
+    border-radius: 50px
+    border: 1px solid lighten($gray, 53.73)
+    margin-bottom: 1.2rem
+  &__policy
+    color: lighten(saturate(adjust-hue($gray, 249), 3.35), 40.98)
+    padding: 0.4rem
+    margin-bottom: 1.2rem
+  &__button
+    padding: 1.5rem 2.4rem
+    margin-left: auto

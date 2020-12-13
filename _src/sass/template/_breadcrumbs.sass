@@ -1,0 +1,16 @@
+.breadcrumbs
+  padding-top: 15.6rem
+  border-bottom: 1px solid lighten(saturate(adjust-hue($gray, 280), 4.92), 70.00)
+  &__item
+    font-size: 1.3rem
+    line-height: 5.8rem
+    color: lighten($gray, 40.00)
+    &:nth-last-child(n+2)
+      color: $gray
+      &::after
+        content: ''
+        display: inline-flex
+        width: 0.4rem
+        height: 0.7rem
+        background: url(../img/icons/bc-arrow.svg) no-repeat center / cover
+        margin: 0 0.8rem

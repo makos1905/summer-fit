@@ -1,0 +1,181 @@
+
+@media screen and ( max-width: 1243px )
+  html, body
+    font-size: 9px
+
+@media screen and ( max-width: 1200px )
+  html, body
+    font-size: 7px
+  .header
+    &__menu
+      padding: 1rem 0
+      &-item
+        padding: 0.65rem 3.35/114*100%  
+
+@media screen and ( max-width: 993px )
+  html, body
+    font-size: 7px
+  .header
+    &__menu
+      padding: 1rem 0
+      &-item
+        padding: 0.65rem 2.3/114*100%
+
+@media screen and ( max-width: 768px )
+  html, body
+    font-size: 6px
+  .header
+    &__menu
+      &-item
+        padding: 0.65rem 1.35em
+
+
+
+@media screen and ( max-width: 660px )
+  html, body
+    font-size: 8px
+
+@media screen and ( max-width: 576px )
+  .title
+    font-size: 3rem
+    line-height: 4rem
+    &--light
+      margin-bottom: 5rem
+  .header
+    background: rgba(00, 00, 00, 0.85)
+    &__logo
+      flex: 0 1 30%
+    &__reg, &__select-club
+      display: none
+    &__contact
+      line-height: 2.5rem
+      &-text
+        font-size: 2rem
+      &-phone
+        font-size: 2.5rem
+    &__callback
+      & button
+        display: none
+    &__nav
+      display: none
+    & .button--callback
+      display: none
+  .hero
+    padding-top: 10rem
+    &__swiper
+      &-pagination
+        margin-bottom: 0
+  .clubs
+    &__select
+      flex-direction: column
+    &__club
+      margin-bottom: 2rem
+      &:last-child
+        margin-bottom: 0
+  .reg
+    &__input
+      flex: 0 1 80%
+      margin-bottom: 2rem
+    &__button
+      flex: 0 1 50%
+      font-size: 2rem
+      padding: 2rem 0
+    &__policy
+      font-size: 1rem
+      margin-top: 5rem
+  .services
+    &__button
+      &-prev, &-next
+        display: none
+  .gallery
+    background: $dark url(../img/gallery/gallery__bg-left.jpg) center / contain
+    &__title
+      color: $light
+      &::after
+        display: none
+    &__container
+      padding: 2rem
+    &__bg
+      top: 0
+      height: 100%
+      &-left, &-right
+        display: none
+    &__swiper
+      &-container
+        width: 100%
+    &__button
+      &-prev, &-next
+        display: none
+  .cards
+    &__card
+      display: none
+      flex: 0 1 100%
+    &__img
+      width: 100%
+      &--top, &--bottom
+        display: none
+      &--midle
+        filter: blur(0)
+        z-index: -1
+    &__form
+      flex: 0 1 100%
+      background-color: rgba($light, 0.9)
+      padding: 1.5rem 1rem
+  .breadcrumbs
+    display: none
+  .club
+    padding-top: 10rem
+    &__photo
+      margin-bottom: 2rem
+    &__description
+      flex-wrap: wrap
+      flex-direction: column
+    &__contacts
+      flex: 0 1 100%
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-evenly
+    &__contact
+      flex: 0 1 100%
+      margin: 1rem 0
+      &-img
+        max-width: 8rem
+      &-text
+        & p, & a
+          // font-size: 3rem
+          line-height: 3rem
+          // margin-top: 1rem
+        & span
+          // font-size: 2.8rem
+    &__advantage
+      &-wrap
+        margin-bottom: 1rem
+    &__cards
+      &-img
+        display: none
+    &__form
+      flex-basis: 100%
+    &__tickets
+      flex-wrap: wrap
+    &__ticket
+      flex: 0 1 100%
+      flex-direction: row
+      margin-bottom: 1rem
+
+  .footer
+    &__logo
+      display: none
+    &__top
+      flex-direction: column
+    &__menu
+      
+    &__callback
+      display: none
+    &__bottom
+      flex-direction: column-reverse
+    &__social
+      width: 80%
+      margin-bottom: 3rem
+      &-icon
+        width: 5rem
+        height: 5rem

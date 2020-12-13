@@ -1,0 +1,27 @@
+{
+  "name": "summer-fit",
+  "version": "1.0.0",
+  "description": "ЛЕТО - сеть фитнес клубовтзь",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Makos",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webpcss": "^1.1.1"
+  }
+}

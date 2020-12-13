@@ -1,0 +1,45 @@
+.services
+  padding: 6.3rem 0
+  &__content
+    position: relative
+  &__swiper
+    &-container
+      max-width: 110rem
+      overflow: hidden
+      display: flex
+      justify-content: center
+      margin: auto
+  &__button
+    &-prev, &-next
+      top: 45%
+      z-index: 2
+    &-prev
+      left: 0px
+    &-next
+      right: 0px
+  &__service
+    width: 210/1140*100%
+    max-width: 210px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-img
+      background-color: darken(saturate(adjust-hue($dark, 32), 1.51), 1.37)
+      margin-bottom: 1.9rem
+      & img
+        width: 100%
+    &-text
+      max-width: 189px
+    &-title
+      font-size: 1.6rem
+      line-height: 1.8rem
+      font-weight: bold
+      color: $gray
+      text-align: center
+    &-description
+      font-size: 1.4rem
+      line-height: 1.8rem
+      font-weight: 300
+      color: lighten($gray, 20.00)
+      text-align: center

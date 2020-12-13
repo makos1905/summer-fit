@@ -1,0 +1,84 @@
+.pop
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background-color: rgba(0, 0, 0, 0.4)
+  z-index: 20
+  &__wrap
+    display: flex
+    flex-direction: column
+    width: 35.9rem
+  &__close
+    width: 1.9rem
+    height: 1.9rem
+    align-self: end
+    background: transparent
+    padding: 0.3rem
+  &__window
+    width: 34rem
+  &__title
+    font-size: 2.1rem
+    line-height: 2.3rem
+    color: $gray
+    font-weight: bold
+    text-transform: uppercase
+    text-align: center
+    background-color: $primary
+    padding: 1.7rem 0
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: start
+    background-color: $dark
+    padding: 2.6rem 3.6rem 2.9rem
+  &__input
+    width: 26.8rem
+    height: 4.5rem
+    font-size: 1.3rem
+    line-height: 2.4rem
+    font-weight: 300
+    color: #101010
+    border: 0
+    padding: 1.5rem 2.9rem
+    border-radius: 5rem
+    margin-bottom: 1.2rem
+  &__policy
+    max-width: 17.5rem
+    display: flex
+    color: $light
+    font-size: 1.1rem
+    line-height: 1.4rem
+    text-transform: uppercase
+    margin-bottom: 1.8rem
+  &__button
+    width: 16rem
+    height: 4.5rem
+  // &__checkbox
+  //   opacity: 0
+  //   visibility: hidden
+  //   margin-right: -17px
+  //   &:checked +
+  //     .pop__label
+  //       &::before
+  //         width: 2.95rem
+  //         background: $primary url('../img/icons/check.svg') no-repeat center / 0.8rem
+  //         border: none
+  // &__label
+  //   display: flex
+  //   cursor: pointer
+  //   &::before
+  //     content: ''
+  //     width: 28px
+  //     height: 17px
+  //     background-color: $light
+  //     border: 1px solid #b7b7b7
+  //     cursor: pointer
+  //     margin-left: -1.7rem
+  //     margin-right: 11px

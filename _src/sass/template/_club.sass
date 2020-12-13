@@ -1,0 +1,113 @@
+.club
+  padding: 3.7rem 0
+  &__description
+    display: flex
+    justify-content: space-between
+  &__photo
+    flex: 0 1 555/1140*100%
+    max-width: 555px
+  &__contacts
+    flex: 0 1 500/1140*100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__contact
+    display: flex
+    align-items: center
+    &-img
+      max-width: 4.5rem
+      margin-right: 2.2rem
+      img
+        width: 100%
+    &-text
+      & p, & a
+        color: $gray
+        font-size: 1.7rem
+        line-height: 2.3rem
+        font-weight: 300
+      & span
+        font-size: 1.8rem
+        font-weight: 500
+      & a
+        display: block
+        &[href="mailto:sell@letofit.ru"]
+          text-decoration: underline
+  &__button
+    width: 18.8rem
+  &__advantages
+    display: flex
+    justify-content: center
+    align-items: stretch
+    flex-wrap: wrap
+    margin: 4.9rem (-3.5rem/2)
+  &__advantage
+    width: 14.5rem
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid rgba(darken(saturate(adjust-hue($dark, 32), 1.51), 1.37), 0.14)
+    &-wrap
+      padding: 0 (2.1rem/2)
+    &-img
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 9rem
+    &-name
+      width: 100%
+      padding: 1.8rem 1.3rem 
+      & h4
+        color: $gray
+        font-size: 1.4rem
+        line-height: 1.7rem
+        font-weight: bold
+        text-align: center
+    &-line
+      text-align: center
+      width: 101/145*100%
+      height: 1px
+      background-color: rgba(darken(saturate(adjust-hue($dark, 32), 1.51), 1.37), 0.14)
+      margin: 0 auto
+  &__cards
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-wrap: wrap
+    &-img
+      flex: 0 1 361/1140*100%
+      max-width: 36.1rem
+  &__form
+    flex: 0 1 740/1140*100%
+    max-width: 74rem
+    display: flex
+    flex-direction: column
+  &__tickets
+    display: flex
+    justify-content: space-between
+    margin-bottom: 2.7rem
+  &__ticket
+    flex: 0 1 145/740*100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    line-height: 1.8rem
+    border-radius: 1rem
+    &-type
+      // width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      &:before, &:after
+        content: ''
+        display: flex
+        width: 0.5rem
+        height: 1px
+        background-color: rgba($dark, 0.6)
+        margin: 0 0.4rem
+    &-price
+      font-size: 1.6rem
+    &-rem
+      text-transform: none

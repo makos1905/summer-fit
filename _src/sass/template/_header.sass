@@ -1,0 +1,128 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: linear-gradient(45deg, $grad-light, $dark)
+  z-index: 15
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2rem 0 2.3rem 0
+  &__logo
+    margin-right: auto
+  &__reg
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-right: 7rem
+    &-button
+      max-width: 17rem
+      color: $light
+      font-weight: bold
+      font-size: 1.4rem
+      text-align: left
+      line-height: 1.8rem
+      background: url(../img/icons/reg.svg)
+      background-repeat: no-repeat
+      background-position: center left
+      background-size: contain
+      padding-left: 4.6rem
+  &__select
+    &-club
+      margin-right: 7.9rem
+      position: relative
+    &-button
+      color: $primary
+      font-size: 1.2rem
+      line-height: 2.2rem
+      font-weight: bold
+      text-transform: uppercase
+      border: 1px solid $primary
+      border-radius: 50px
+      background: transparent
+      background: url(../img/icons/arrow.svg)
+      background-repeat: no-repeat
+      background-position-x: 3rem
+      background-position-y: center  
+      appearance: none
+      padding: 1rem 3.4rem
+      padding-left: 5.5rem
+      &--press
+        color: $dark
+        background-color: $primary
+        background-image: url(../img/icons/arrow-dark.svg)
+        background-repeat: no-repeat
+        background-position-x: 3rem
+        background-position-y: center 
+        border-radius: 20px 20px 0 0
+    &-list
+      position: absolute
+      top: 100%
+      left: 0
+      color: $dark
+      font-style: 1.4rem
+      line-height: 2rem
+      background-color: $primary
+      border-radius: 0 5px 5px 5px
+      z-index: 16
+  &__club
+    display: flex
+    flex-direction: column
+    color: $dark
+    font-size: 1.4rem
+    line-height: 2rem
+    white-space: nowrap
+    padding: 0.9rem 3.2rem
+    border-radius: 5px
+    cursor: pointer
+    &:first-child
+      padding-top: 2.5rem
+    &:last-child
+      padding-bottom: 3rem
+    & span
+      display: block
+    &-name
+      font-weight: bold
+      line-height: 3rem
+    &-adress
+      font-weight: 300
+    &:hover
+      color: $light
+      background-color: $dark
+  &__selected-club
+    display: flex
+    flex-direction: column
+    align-items: start
+    font-size: 1.5rem
+    background: transparent
+    background-repeat: no-repeat
+    background-position-x: left
+    background-position-y: center
+    padding-left: 3rem
+    & .header__club-name
+      color: $primary
+    & .header__club-adress
+      color: $light
+  &__nav
+    background-color: #000000
+    opacity: 0.7
+  &__menu
+    display: flex
+    justify-content: space-between
+    padding: 1.5rem 0
+    &-item
+      color: $light
+      font-size: 1.4rem
+      line-height: 1.8rem
+      text-transform: uppercase
+      padding: 0.65rem 3.35/114*100%
+      border-left: 1px dotted $light
+      &:first-child
+        padding-left: 0
+        border: 0
+        margin-left: 0
+      &:last-child
+        padding-right: 0
+        margin-right: 0
